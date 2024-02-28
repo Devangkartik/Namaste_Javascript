@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <style>
+        body{
+          display: flex;
+          flex-wrap: wrap;
+            background:url("https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg") ;
+            margin:0%;
+            padding: 0%;
+        }
+        .header{
+            display: flex;
+            float: inline-end;
+            color: azure;
+            text-decoration: none;
+            height: 100px;
+            background-color: rgb(52, 47, 47);
+            border:3px solid rgb(190, 67, 22);
+            border-radius: 10px;
+        }
+        .navbar{
+            text-decoration: none;
+            display:flex;
+            font-weight: bold;
+            font-size: 25px;
+            color: azure;
+        }
+    img{
+        margin-right: 3px;
+        margin-top: 10px;
+    margin-left: 20px;
+     /* padding: 20px;
+     margin: 10px; */
+    border-radius: 60px;
+   }
+  h1 strong p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    padding-bottom: 30px;
+   }
+   
+   .nav li{
+    color: black;
+    font-size: 25px;
+        font-weight: bold;
+        padding: 24px 20px;
+        display:inline-block;
+   }
+   a:hover{
+    cursor: pointer;
+    color: rgb(34, 34, 239);
+   }
+   .container{
+    border:4px solid rgb(0, 0, 0);
+    width:800px;
+    margin: 10px;
+    border-radius: 4px;
+    height: 500px;
+   }
+   #box1{
+            border-radius: 2px;
+            display:flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 25px;
+            color: rgb(121, 44, 32);    
+   }
+   
+    </style>
+</head>
+<body>
+<div class="foodPortfholio" id="order">
+    <div class="header">
+        <img src="https://lh3.googleusercontent.com/a/AGNmyxbTjojmlgTZXJcqzelkeZrIK4-7cA3z2fk8EHO9uw=s360"height="80" width="80" alt="Responsive pic" srcset="">
+        <h2><strong>" Lise Community "</strong> Provide fastest  food  delivery  Services</h2>
+        <p>Research on consumer quality perception is reviewed using the Total Food Quality Model as a structuring device. 
+            The relationship between food safety and quality is addressed, and is discussed in the context of research on consumer risk perception
+            ..</p>
+        
+    </div>
+    <div class="navbar">
+        <ul class="nav">
+            <li><a herf="#">Home</a></li>
+            <li><a herf="#">Services</a></li>
+            <li><a herf="#">Contact us</a></li>
+            <li><a herf="#">About</a></li>
+            <li><a herf="#">Quality</a></li>
+            <li><a herf="#"> price of Iteam</a></li>
+            <li><a herf="#">Payment</a></li>
+            <li><a herf="#">Customer care</a></li>
+          </ul>
+      </div>
+      <div class="container">
+        <div class="box" id="box1">
+            <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="validationServer01" class="form-label">First name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServer02" class="form-label">Last name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServerUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationServer03" class="form-label">City</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                  <div id="validationServer03Feedback" class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationServer04" class="form-label">State</label>
+                  <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                  <div id="validationServer04Feedback" class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationServer05" class="form-label">Zip</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                  <div id="validationServer05Feedback" class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                      Agree to terms and conditions
+                    </label>
+                    <div id="invalidCheck3Feedback" class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>
+        </div>
+      </div>
+</div>
+    <script>
+
+    </script>
+</body>
+</html>

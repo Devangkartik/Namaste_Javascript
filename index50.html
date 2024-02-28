@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupulating dom</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(130, 228, 228);
+        }
+        #btn{
+            padding: 10px;
+            background-color: rgb(8, 147, 147);
+            border-radius:8px;
+            border:2px solid rgb(42, 4, 4);
+            font-weight: bold;
+            width: 80px;
+            margin-top:10px;
+        }
+.container{
+    border:2px solid rgb(62, 11, 11);
+    background-color: rgb(121, 76, 164);
+    height: 100px;
+    padding: 20px;
+}
+.context{
+    background-color: rgb(179, 126, 229);
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+
+    <div class="context">
+       <p id="para">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, laborum!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, laborum!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, laborum!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, laborum!
+        </p>
+        <form>  
+            <h1>College Resistration Form</h1>
+            <p>Thanks for the applying to our college .Please fill in the form below to complete the Registration process for admission.</p>
+    
+    
+               <lable for="name">Student Name*</lable><br><br>
+               <input type="text"id="Fname"value="Fname">   <input type="text"id="Lname"value="Lname"><br><br>
+               <lable for="name">Father Name*</lable><br><br>
+               <input type="text"id="Fname"value="Fname">   <input type="text"id="Lname"value="Lname"><br><br>
+               <lable for="name">Mother Name*</lable><br><br>
+               <input type="text"id="Fname"value="Fname">   <input type="text"id="Lname"value="Lname"><br><br>
+    
+               <label for="Gender" >Gender*</label><br>
+               <input type="radio" id="Gender"name="Gender"value="Male"/>Male<br/>
+               <input type="radio" id="Gender"name="Gender"value="Female"/>Female<br><br/>
+         </form>
+    </div>
+       <button id="btn"onclick="toggleHide()">show/hide</button>
+    
+    <!-- browser event
+    click
+    contextmenu
+    mouseover
+    mousedown
+    mousemove
+   
+    summit
+    focus 
+
+    transition -->
+    <script>    
+         function toggleHide(){
+           let para = document.getElementById('para');
+           let btn = document.getElementById('btn');
+           if(para.style.display!='none'){
+               para.style.display = 'none';
+           }else{
+            para.style.display = 'block';
+           }
+         }
+
+        // let main = document.getElementById('main');
+        // console.log(main);
+
+    // let nav = document.getElementById('nav');
+    // console.log(nav);
+
+//     let containers = document.getElementsByClassName('container');
+//    console.log(containers);
+
+// let select = document.querySelector('.container')
+// console.log('Selecter return',select);
+
+// let select1 = document.querySelectorAll('.container>ul>li');
+//  console.log('Selecter return',select1);   
+
+
+
+    </script>
+</body>
+</html>

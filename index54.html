@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+          
+        function submitForm(event) {
+        
+            alert("Do you want to submit your form");
+        }
+    </script>
+    <style>
+        
+        body{
+            display:inline-block;
+            height: 100%;
+            width:100%;
+        }
+      .navbar{
+        display: inline-block;
+        background-color:aqua;
+         border:4px solid black;
+         padding:10px ;
+        border-radius: 23px;
+         width: 100%;
+         box-sizing: border-box;
+      }
+      .btn{
+         background-color: rgb(114, 54, 170);
+        border-radius: 10px;
+        margin-top: 10px;
+        float: right;
+      }
+      .btn:hover{
+        background-color: aquamarine;
+      }
+      img{
+        border-radius: 20px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container" id="project">
+        <div class="navbar" id="nav">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <p id="result"></p>
+            <form id="myForm">
+          <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"width="100%" height="50%"class="img-fluid" alt="Responsive image"><br><br>
+              <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="devang@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Country select*</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1.Shrilanka</option>
+                        <option>2.Pakistan</option>
+                        <option>3.India</option>
+                        <option>4.America</option>
+                        <option>5.Austrelia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+              <label for="exampleFormControlSelect2">State select*</label>
+              <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>1.Utter Predesh</option>
+                  <option>2.Rajsthan</option>
+                  <option>3.Panjab</option>
+                  <option>4.Bihar</option>
+                  <option>5Gujraat</option>
+                </select>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">About Yourself*</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <input class="form-control mr-sm-2" type="search" placeholder="search on browser" aria-label="Search">
+            <button class="btn" type="submit"onclick="submitForm(event)">Submit</button>
+        </form>
+          
+    </div>
+</nav>
+
+</div>
+</body>
+</html>

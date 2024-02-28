@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child of cheudo selecetor</title>
+    <style>
+        input{
+      display: block;
+      margin: 10px;
+        }
+        .container{ 
+            display: inline-block;
+            margin: auto;
+            width : 100vw;
+            height: 100vh;
+            border: 4 px solid rgb(140, 18, 18);
+            border-radius: 20px;
+          
+        }
+        input[type='text']{
+            padding: 20px;
+            border:2px solid red;
+        }
+        a[target]{
+            font-size: 34px;
+            color: rgb(125, 58, 173)
+        }
+        a[target]{
+            font-size: 34px;
+            color: rgb(44, 47, 233)
+        }
+        input[type='email']{
+            color:yellow;
+            border:4px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> <a href="http://google.com" target="_blank">Go TO Google</a></h1>
+        <h1> <a href="http://facebook.com" target="_self">Go TO Google</a></h1>
+     <form action="" class="form-control">
+         <input type="text"placeholder="Enter your name">
+         <input type="email"placeholder="Enter your email">
+         <input type="password"placeholder="Enter your password">
+         <input type="summit"value="summit">
+            <ul>
+                <li class="iteam" id="iteam1">iteam matro1</li>
+                <li class="iteam" id="iteam2">iteam matro2</li>
+                <li class="iteam" id="iteam3">iteam matro3</li>
+                <li class="iteam" id="iteam4">iteam matro4</li>
+                <li class="iteam" id="iteam5">iteam matro5</li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid  main topic</title>
+    <style>
+        .grid{
+            display :grid;
+            grid-gap:2rem;
+            /* grid-template-rows: 2fr 2fr 4fr; */
+            grid-template-rows: 3fr 3fr 3fr;
+            grid-auto-rows: 3fr;
+            /* grid-template-columns: 4fr 4fr 4fr; */
+            /* grid-template-columns: repeat(12 ,4fr); */
+            grid-template-columns: 4fr 4fr;
+        }
+        .box{
+            background-color: rgb(110, 78, 197);
+            border:2px solid rgb(110, 7, 7);
+        }
+
+    </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="box">this is grid box1</div>
+    <div class="box">this is grid box2</div>
+    <div class="box">this is grid box3</div>
+    <div class="box">this is grid box4</div>
+    <div class="box">this is grid box5</div>
+    <div class="box">this is grid box6</div>
+    <div class="box">this is grid box7</div>
+    <div class="box">this is grid box8</div>
+    <div class="box">this is grid box9</div>
+    <div class="box">this is grid box10</div>
+    <div class="box">this is grid box11</div>
+    <div class="box">this is grid box12</div>
+
+  </div>
+    
+</body>
+</html>

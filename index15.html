@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        /* flexbox is one dimentional layout for laying out iteam in row  and  columns; */
+        .container{
+            display : flex;
+            height: 544px;
+            width: 200%;
+            border :2px solid black;
+            /* flex properties in add to container */
+             /* flex-direction: row;  */
+             /* default value of flex direction is row */
+             /* flex-direction: column;  */
+             /* flex-direction: row-reverse; */
+             /* flex-direction: column-reverse; */
+              /* flex-wrap: wrap;  */
+             /* flex-wrap: wrap-reverse; */
+            /* set smilteniously direction and wrap used of flex flow */
+            /* flex-flow:row-reverse wrap; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content:space-evenly; */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            
+
+
+        }
+        .iteam{
+            width:200px;
+            height: 100px;
+            background-color: blue;
+            border :2px solid red;
+            margin : 10px;
+            padding : 3px;
+        }
+        #iteam1{
+            /* flex properties for flex iteams */
+            /* bigger value of order is in the last */
+            /* order : 2; */
+            flex-grow: 1;
+            flex-shrink: 2;
+            /* when flex direction is set to row flex basis : will control width; */
+            /* when flex direction is set to the column flex basiswill control height */
+            flex-basis: 320px;
+        }
+        #iteam2{
+
+        }iteam3{
+
+        }
+    </style>
+</head>
+<body>
+    <h1> this is the flexbox tutorials </h1>
+    <div class="container">
+        <div class="iteam" id="iteam1">first</div>
+        <div class="iteam" id="iteam2">second</div>
+        <div class="iteam" id="iteam3">third</div>
+        <div class="iteam" id="iteam4">forth</div>
+        <div class="iteam" id="iteam5">fifth</div>
+    </div>
+</body>
+</html>

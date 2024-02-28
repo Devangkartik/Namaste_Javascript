@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in Css</title>
+    <style>
+        .container{
+            display:grid;
+            grid-gap:2rem;
+            grid-template-columns: 300px 100px 100px;
+            grid-template-columns: 300px 100px auto;
+            grid-template-columns: 1fr 4fr 2fr;
+            background-color: rgb(12, 132, 132);
+                
+        }
+        .iteams{
+            /* height: 100px;
+             width:100px; */
+             border: 2px solid rgb(48, 7, 7);
+             margin:3px;
+             padding: 10px;
+             background-color: rgb(122, 236, 236);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="iteams">This is the iteam1</div>
+        <div class="iteams">This is the iteam2</div>
+        <div class="iteams">This is the iteam3</div>
+        <div class="iteams">This is the iteam4</div>
+        <div class="iteams">This is the iteam5</div>
+        <div class="iteams">This is the iteam6</div>
+        <div class="iteams">This is the iteam7</div>
+        <div class="iteams">This is the iteam8</div>
+        <div class="iteams">This is the iteam9</div>
+  
+    </div>
+    
+</body>
+</html>

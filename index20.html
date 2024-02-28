@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selector</title>
+    <style>
+        body{
+            padding: 0;
+            margin :0;
+            background-color: rgb(139, 237, 237);
+            color: rgb(149, 47, 204);
+            background: url("https://www.istockphoto.com/photo/abstract-concepts-of-cybersecurity-technology-and-digital-data-protection-protect-gm1419766496-466008842?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fbackground&utm_term=background%3A%3A%3Ajpg");
+        }
+        .navigation{
+            font-size:20px;
+            display:flex;
+        }
+ header{
+    display:inline;
+    flex-direction: coloumn;
+ }
+ li{
+    list-style: none;
+    padding:34px 23px;
+ }
+section{
+    display: block;
+    height: 344px;
+    align-items: center;
+    margin: 3px 10px;
+    display:inline;
+    flex-direction: column ;
+}
+ h3::after{
+    content:"this is the content";
+}
+/* section::before{
+    content:"this is the content";
+} */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="iteam" id="iteam1">Home</li>
+                <li class="iteam" id="iteam2">About</li>
+                <li class="iteam" id="iteam3">Services</li>
+                <li class="iteam" id="iteam4">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h3>Welcome to coding world</h3>
+            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae tempore possimus veniam recusandae beatae
+                 fugiat reprehenderit accusamus quaerat molestias excepturi eveniet vitae,
+                 doloremque iusto dolor, voluptatum tenetur molestiae, eligendi similique?</p>
+        </section>
+</body>
+</html>

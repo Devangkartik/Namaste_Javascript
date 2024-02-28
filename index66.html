@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+      
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+         *{
+            font-family: 'Roboto', sans-serif;
+         }
+     .text-center{
+        text-align: center;
+     }
+     .bg-red{
+        background-color: brown;
+     }
+     .mx-auto{
+        margin:auto;
+     }
+     /* .m-w-20{
+        max-width: 30vw;
+     } */
+     .button{
+        padding: 20px;
+        margin: 0 5px;
+        border: 3px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: aqua;
+     }
+     :hover.button{
+        font-size: larger;
+        color: aliceblue;
+        background-color: red;
+     }
+     .flex{
+      display:flex
+     }
+     .flex-col{
+        flex-direction: column;
+     }
+     .container{
+        /* justify-content: center; */
+        align-items: center;
+     }
+     .row{
+        margin: 10px 0;
+     }
+     .input{
+        margin:0px;
+        padding: 20px 30px;
+        border : 3px solid rgb(205, 16, 16);
+        border-radius:5px;
+        font-weight: bold;
+
+     }
+     :hover.input{
+        background-color: rgb(73, 34, 214);
+     }
+    
+    </style>
+</head>
+<body >
+<h1 class="text-center">Calculator using html Css And javaScript</h1>
+<div class="container flex flex-col bg-red mx-auto m-w-20">
+    <div class="row">
+        <input type="text" class="input">
+    </div>
+     <div class="row">
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button">*</button>
+    </div>
+    <div class="row">
+        <button class="button">6</button>
+        <button class="button">5</button>
+        <button class="button">4</button>
+        <button class="button">+</button>
+      </div>
+      <div class="row">
+        <button class="button">3</button>
+        <button class="button">2</button>
+        <button class="button">1</button>
+        <button class="button">-</button>
+      </div>
+      <div class="row">
+        <button class="button">0</button>
+        <button class="button">C</button>
+        <button class="button">=</button>
+        <button class="button">/</button>
+      </div>
+</div>
+
+<script>
+let string = "";
+let buttons = document.querySelectorAll('.button');
+Array.from(buttons).forEach((button)=>{
+button.addEventListener('click',(e)=>{
+    if(e.target.innerHTML=='='){
+        string = eval(string)
+        document.querySelector('input').value = string; 
+    }else if(e.target.innerHTML=='C'){
+        string = " ";
+        document.querySelector('input').value = string;
+    }else{
+    console.log(e.target)
+    string = string + e.target.innerHTML;
+    document.querySelector('input').value = string;
+    }
+})
+})
+</script>
+</body>
+</html>

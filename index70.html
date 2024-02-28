@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    .container{
+        /* width: 1800px;*/
+        height: 1200px; 
+        display: flex;
+    
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction:row; */
+        border:1px solid black;
+        /* flex-direction:column-reverse; */
+        /* flex-wrap: nowrap; */
+        flex-wrap: nowrap;
+        /* justify-content: center;
+        justify-content: end;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly; */
+         /* align-items: stretch; */
+        /* align-items: center; */
+        /* align-items:stretch; */
+        background-color:aqua;
+        align-content: start;
+    }
+    .iteam{
+        border:2px solid black;
+        height:200px;
+        width:200px;
+        margin:2px;
+        padding: 2px;
+
+    }
+    
+     #box1{
+        background-color: rgb(255, 0, 230);
+        order: 1;
+     }
+     #box2{
+        background-color: rgb(0, 255, 106);
+        order: 2;
+     }  
+     #box3{
+        background-color: rgb(169, 160, 61);
+     }
+     #box4{
+        background-color: rgb(74, 11, 25);
+        order: -1;
+     }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="iteam" id="box1"></div>
+        <div class="iteam" id="box2"></div>
+        <div class="iteam" id="box3"></div>
+        <div class="iteam" id="box4"></div>
+       </div>
+</body>
+</html>

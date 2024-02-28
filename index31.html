@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sheudo Selector in html</title>
+    <style>
+        /* div p{
+            color:red;
+            background-color: rgb(187, 255, 0);
+            font-size:bold;
+        } */
+   h1{
+    background-color: rgb(43, 143, 143);
+    color:black;
+    font-weight: bold;
+      text-align: center;
+   }
+   /* if p is contained by any li which is conytained by div  */
+   /* div li p{
+            color:red;
+            background-color: rgb(187, 255, 0);
+            font-size:bold;
+        } */
+  /* if p is right inside div then this css will be applied  */
+        /* div > p{
+            color:red;
+            background-color: rgb(187, 255, 0);
+            font-size:bold;
+        } */
+ /* if p is right after div or p is the next siblings of div */
+        div + p{
+            color:red;
+            background-color: rgb(187, 255, 0);
+            font-size:bold;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>This is more on Selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="iteam">
+                    <p>This is the paragraph Tag inside li</p>
+                    <p>this will be affected by iteams child of li</p>
+                </li>
+                <p>This is the para inside ul use by visul stdio code</p>
+            </ul>
+            <p>This is the another direct child of div</p>
+        </div>
+        <p>This is another paragraph Tag</p>
+    </div>
+    <p>this is outre mode paragraph tag</p>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text shadow</title>
+    <style>
+        h1{
+            text-shadow: 4px 5px rgb(227, 76, 227);
+        }
+       .container{
+        display: flex;
+        border:3px solid rgb(82, 12, 12);
+        background-color: rgb(15, 114, 114);
+        justify-content: center;
+         width:100vw;
+         height:100vh;
+       }
+       .card{
+        padding : 23px 12px;
+        margin : 23px 12px;
+        border:2px solid rgb(72, 107, 196) ; 
+        border-radius: 20px;
+        background-color : rgb(64, 237, 240);
+        /* box-shadow : x-offset y-offset blur-radious spred-radious color */
+        box-shadow: 10px 12px 10px 10px rgb(78, 93, 211);
+        box-shadow: inset 3px 5px rgb(148, 40, 180);
+        height: 300px;
+        width: 400px;
+       }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card" id="card1"><h1> PassCard=>1:Enroll HTML COURSE</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Ipsam dolore rem nemo consequuntur similique quasi beatae 
+        illum officia accusamus necessitatibus possimus vitae sunt
+         impedit modi, voluptates, non quo iste a porro obcaecati
+          unde. Eum sed, doloremque eveniet
+         amet minima voluptatibus.</p>
+    </div>
+    <div class="card" id="card1"><h1>PassCard=>2:Enroll JAVASCRIPT COURSE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Ipsam dolore rem nemo consequuntur similique quasi beatae 
+            illum officia accusamus necessitatibus possimus vitae sunt
+             impedit modi, voluptates, non quo iste a porro obcaecati
+              unde. Eum sed, doloremque eveniet
+             amet minima voluptatibus.</p>
+    </div>
+    <div class="card" id="card1"><h1>PassCard=>3 Enroll JAVA COURSE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Ipsam dolore rem nemo consequuntur similique quasi beatae 
+            illum officia accusamus necessitatibus possimus vitae sunt
+             impedit modi, voluptates, non quo iste a porro obcaecati
+              unde. Eum sed, doloremque eveniet
+             amet minima voluptatibus.</p>
+    </div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+            display: grid;
+           /* grid-template-columns: 1fr 3fr 3fr; */
+           grid-template-columns: repeat(3,1fr);
+           grid-template-rows: repeat(3,1fr) ;
+           /* grid-row-gap: 2rem;
+           grid-column-gap: 3rem; */
+        }
+        .box{
+            border:2px solid black;
+            background-color: aqua;
+            padding: 20px;
+        }
+        .box:first-child{
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">iteam1</div>
+        <div class="box">iteam2</div>
+        <div class="box">iteam3</div>
+        <div class="box">iteam4</div>
+        <div class="box">iteam5</div>
+        <div class="box">iteam6</div>
+        <div class="box">iteam7</div>
+        <div class="box">iteam8</div>
+        <div class="box">iteam9</div>
+    </div>
+</body>
+</html>

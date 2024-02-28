@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quries in css grid</title>
+    <style>
+        .box{
+           display:none;
+           text-align: center;
+           font-size: 72px;
+           background-color: rgb(2, 9, 9);
+           color:aliceblue ;
+        }
+        @media (max-width:300px) {
+           #box1{
+               display : block;
+               background-color: blueviolet;
+           }
+        }
+
+        @media (min-width:300px) and (max-width:500px){
+      #box2{
+   display : block;
+   background-color: #9bce25;
+  }
+}
+@media (min-width:500px) and (max-width:800px){
+      #box3{
+   display : block;
+   background-color: #4bcf31;
+  }
+}
+@media (min-width:800px) and (max-width:1000px){
+      #box4{
+   display : block;
+   background-color: #e03030;
+  }
+}
+@media (min-width:1000px)and(max-width:1400px){
+   #box5{
+      display:block;
+      background-color: #150b99;
+   }
+}
+   </style>
+</head>
+<body>
+<div class="box" id="box1">Tablet</div>
+<div class="box" id="box2">Phone</div>
+<div class="box" id="box3">Laptop</div>
+<div class="box" id="box4">Computer</div>   
+<div class="box" id="box5">Devang kartik</div>
+</body>
+</html>

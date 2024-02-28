@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+        
+            height:1000px;
+            width:1500px;
+            border:2px solid rgb(96, 9, 9);
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* flex-flow:row-reverse wrap */
+            /* this is the shorthand for flex-direction and flex-wrap  */
+        /* justify-content:center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+         /* align-items: center; */
+         /* align-items: flex-end; */
+         /* align-items: flex-start; */
+         /* flex-wrap:wrap; */
+         /* align-items: stretch; */
+        }
+        .box{
+            display:block;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(90, 197, 213);
+            border:2px solid rgb(220, 20, 20);
+            padding : 10px;
+            margin: 2px;
+
+        }
+        #iteam1{
+            /* order:240; */
+            /* flex-grow: 3; */
+        }
+        #iteam2{
+            /* order:40; */
+           /* flex-grow:3;  */
+           /* flex-shrink: 2; */
+        }
+        #iteam3{
+            /* order:10; */
+            /* flex-grow:3; */
+            /* flex-basis is the set height according yuor row and columns */
+            /* flex-basis:420px; */
+            /* flex: grow shrink basis set value togther this way */
+             /* align-self: flex-end; */
+             /* align-self: flex-start; */
+             /* align-self: center; */
+    
+        }
+
+    </style>
+</head>
+<body>
+    <h2>this is a flex box tutorials</h2>
+    <div class="container">
+        <div class="box" id="iteam1">Devang kartik2</div>
+        <div class="box" id="iteam2">Devang kartik1</div>
+        <div class="box" id="iteam3">Devang kartik3</div>
+        <!-- <div class="box" id="iteam4">Devang kartik4</div> -->
+        <!-- <div class="box" id="iteam5">Devang kartik5</div> -->
+        <!-- <div class="box" id="iteam6">Devang kartik7</div> -->
+    </div>
+</body>
+</html>

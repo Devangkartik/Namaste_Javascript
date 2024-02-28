@@ -1,0 +1,36 @@
+/* cascading style sheet 
+css is to style to yuor web page 
+css make your wesite Responsive
+css takes responsibility of design 
+its make our weebsite mordern and good looking 
+syntaX : p{color : blue}
+inline : added element directly in style 
+internal : inside the head tag in <style tags>
+External : saperaletly inside a.css style sheet
+ */
+
+ p{
+    color:blueviolet;
+    background-color:blue;
+ }
+ .square{
+   width:100px;
+   height:100px;
+   background-color:blueviolet;
+   margin: auto;
+ }
+ #circle{
+   color:green;
+   font-size: 20px;
+ }
+ .container{
+   background-color:rgb(169, 211, 230);
+   box-shadow: 3px 5px 3px blue;
+ }
+h1{
+ color:seagreen;
+ text-shadow: -2px -2px black;
+}
+h2{
+   color: darkblue;
+}
